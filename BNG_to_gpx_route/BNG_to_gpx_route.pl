@@ -1,4 +1,17 @@
 #!/usr/bin/perl
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+# 
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+# 
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
 use strict;
 use warnings;
 use Geo::Coordinates::OSGB qw(grid_to_ll shift_ll_into_WGS84);
@@ -163,6 +176,8 @@ sub help
   print " -toFile <filename to write to>\n";
   print " -toGPS <gpsbabel gps type>\n";
   print " -gpsDevice <gpsbabel gps path, eg usb: or /dev/ttyUSB0\n";
+  print "\n";
+  print "This program is distributed under the GNU GPLv3 license, see http://www.gnu.org/licenses/ for more\n";
   exit(0);
 }
 

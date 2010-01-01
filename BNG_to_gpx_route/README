@@ -1,0 +1,12 @@
+This is a small script I wrote to take coordinates from the British National 
+Grid system (Ordnance Survey maps etc) and convert them to latitude longditude
+and write them into a route in a GPX file, optionally uploading direct to your
+gps via gps babel
+
+It is based on the Geo::Coordinates::OSGB perl module 
+(http://search.cpan.org/~toby/Geo-Coordinates-OSGB-2.04/lib/Geo/Coordinates/OSGB.pm)
+which needs to be installed to use this script. If you have the cpan binary installed
+you can get the module by running 'cpan -i Geo::Coordinates::OSGB'
+
+running the script with '-help' will get you the documentation. Please give me a shout
+(anton@piatek.co.uk) if you are using it or find any bugs
