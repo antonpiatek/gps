@@ -11,7 +11,10 @@
 # 
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
+#
+# Copyright Anton Piatek <anton@piatek.co.uk> 2010
+#
+# This code is from http://github.com/antonpiatek/gps/tree/master/BNG_to_gpx_route/
 use strict;
 use warnings;
 use Geo::Coordinates::OSGB qw(grid_to_ll shift_ll_into_WGS84);
@@ -176,6 +179,8 @@ sub help
   print " -toFile <filename to write to>\n";
   print " -toGPS <gpsbabel gps type>\n";
   print " -gpsDevice <gpsbabel gps path, eg usb: or /dev/ttyUSB0\n";
+  print "\n";
+  print "Data can be piped in or out, e.g. $0 < input.txt > output.gpx\n";
   print "\n";
   print "This program is distributed under the GNU GPLv3 license, see http://www.gnu.org/licenses/ for more\n";
   exit(0);
